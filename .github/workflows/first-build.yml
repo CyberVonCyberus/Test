@@ -10,8 +10,5 @@ jobs:
       - name: file generate
         run: echo "test" #date +"Last build: %D %T UTC" >lastbuild.txt
       - name: Commit & push
-      run: git config user.name "github_actions[bot]"
-      git config user.mail "github_actions[bot]@users.noreply.github.com"
-      git add lastbuild.txt
-      git commit -m "auto update" || echo "nothing to commit"
-      git push
+        run: echo "commited and push"
+
