@@ -6,7 +6,7 @@ jobs:
   corrector:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@V5
+      - uses: actions/checkout@v5
       - name: file generate
         run: echo "test" #date +"Last build: %D %T UTC" >lastbuild.txt
       - name: Commit & push
