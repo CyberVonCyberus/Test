@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: file generate
-        run: date
+        run: date "+last build %D %T UTC" > lastbuild.txt
       - name: Commit & push
         run: echo "committed and push"
 
